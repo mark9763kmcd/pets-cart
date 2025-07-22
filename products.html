@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - Pet Delight</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pet Delight</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product" data-id="1">
+        <img src="img/dog-food.jpg" alt="Premium Dog Food" />
+        <h3>Premium Dog Food</h3>
+        <p>Rich in protein and essential vitamins for active dogs.</p>
+        <span>₹699</span>
+        <button onclick="addToCart(1, 'Premium Dog Food', 699)">Add to Cart</button>
+      </div>
+      <div class="product" data-id="2">
+        <img src="img/cat-food.jpg" alt="Natural Cat Food" />
+        <h3>Natural Cat Food</h3>
+        <p>Grain-free and made with real chicken and salmon.</p>
+        <span>₹599</span>
+        <button onclick="addToCart(2, 'Natural Cat Food', 599)">Add to Cart</button>
+      </div>
+	  <div class="product" data-id="3">
+        <img src="img/dog-food2.jpg" alt="Unique Cat Food" />
+        <h3>Unique Cat Food</h3>
+        <p>Grain-free and made with real chicken and salmon.</p>
+        <span>₹599</span>
+        <button onclick="addToCart(3, 'Natural Cat Food', 599)">Add to Cart</button>
+      </div>
+    </div>
+	<div class="products">
+      <div class="product" data-id="1">
+        <img src="img/cat-food2.jpg" alt="Premium Dog Food" />
+        <h3>Premium Dog Food</h3>
+        <p>Rich in protein and essential vitamins for active dogs.</p>
+        <span>₹699</span>
+        <button onclick="addToCart(1, 'Premium Dog Food', 699)">Add to Cart</button>
+      </div>
+      <div class="product" data-id="2">
+        <img src="img/cat-food.jpg" alt="Natural Cat Food" />
+        <h3>Natural Cat Food</h3>
+        <p>Grain-free and made with real chicken and salmon.</p>
+        <span>₹599</span>
+        <button onclick="addToCart(2, 'Natural Cat Food', 599)">Add to Cart</button>
+      </div>
+	  <div class="product" data-id="3">
+        <img src="img/cat-food.jpg" alt="Unique Cat Food" />
+        <h3>Unique Cat Food</h3>
+        <p>Grain-free and made with real chicken and salmon.</p>
+        <span>₹599</span>
+        <button onclick="addToCart(3, 'Natural Cat Food', 599)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Pet Delight</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
